@@ -30,6 +30,13 @@ body {
 	grid-row: 10/13;
 }
 
+.verticalLine {
+	background-color: blue;
+	grid-column: 12/13;
+	grid-row: 5/7;
+	clip-path: polygon(91% 0, 100% 0, 100% 100%, 91% 100%);
+}
+
 .nav {
 	grid-column: 7/13;
 	grid-row: 1/2;
@@ -64,7 +71,9 @@ body {
 .h2 {
 	color: white;
 	font-size: 90px;
-	font-weight: bolder;`
+	font-weight: bolder;
 	grid-column: 7/13;
 	grid-row: 6/7;
 }
+
+
