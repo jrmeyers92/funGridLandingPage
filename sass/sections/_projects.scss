@@ -1,13 +1,28 @@
 .projects {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(12, 1fr);
-	margin-top: -10rem;
 	background-color: black;
+	margin-top: -10rem;
+
 	&__header {
 		font-size: 8rem;
 		color: white;
 		grid-column: 7/13;
-		grid-row: 2/3;
+		margin-top: -4rem;
+	}
+
+	&__container {
+		grid-column: 3/13;
+		padding: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__project {
+		background-color: white;
+		height: 300px;
+		width: 300px;
+		margin: 2rem;
 	}
 }
