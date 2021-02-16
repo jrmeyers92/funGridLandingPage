@@ -1,0 +1,13 @@
+.projects {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+	margin-top: -10rem;
+	background-color: black;
+	&__header {
+		font-size: 8rem;
+		color: white;
+		grid-column: 7/13;
+		grid-row: 2/3;
+	}
+}

@@ -1,10 +1,15 @@
 .about {
-	height: 100vh;
 	width: 100%;
 	display: grid;
 	background-color: black;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(12, 1fr);
+	grid-template-rows: 3fr 1fr;
+
+	&__content {
+		grid-row: 1/2;
+		grid-column: 1/5;
+		position: relative;
+	}
 
 	&__header {
 		color: white;
@@ -20,8 +25,26 @@
 		letter-spacing: 2px;
 		color: white;
 		grid-column: 1/5;
-		padding: 3rem;
+		padding: 2rem 3rem 0 2rem;
 		line-height: 2.4rem;
-		margin-bottom: -1rem;
+	}
+
+	&__redLine {
+		background-color: $red;
+		height: 1rem;
+		grid-column: 1/5;
+		margin-top: 2rem;
+	}
+
+	&__photo {
+		border-radius: 50%;
+		height: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		grid-column: 1/5;
+		padding: 1rem;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
